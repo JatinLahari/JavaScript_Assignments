@@ -1,0 +1,29 @@
+
+<!-- 38)WAP to check whether entered number is Armstrong or not  -->
+ <script> // ex:- 153, 370, 371, 407, 1634
+    let n = prompt("Enter a no: ");
+    n = parseInt(n);
+    let temp = n;
+    let temp2 = n;
+    let count=0;
+    let sum = 0;
+    while(temp != 0){
+        count++;
+        temp = parseInt(temp / 10);
+    }
+    while(temp2 != 0){
+        let rem = temp2 % 10;
+        let power = 1;
+        for(let i = 1; i<=count; i++){
+            power = power * rem;
+        }
+        sum += power;
+        temp2 = parseInt(temp2/10);
+    }
+    if(sum == n){
+        document.write("Entered No is a armstrong no.");
+    }
+    else{
+        document.write("Entered No is not a armstrong no.");
+    }
+ </script>

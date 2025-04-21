@@ -1,0 +1,19 @@
+
+<!-- 40)WAP to count no. Of even and odd digits in a number  -->
+ <script>
+    let n = prompt("Enter a no: ");
+    n = parseInt(n);
+    let even = 0;
+    let odd = 0;
+    while(n!= 0){
+        let rem = n % 10;
+        if(rem % 2 == 0){
+            even++;
+        }
+        else if(rem % 2 != 0){
+            odd++;
+        }
+        n = parseInt(n/10);
+    }
+    document.write("Even digits: "+even+" | Odd digits: "+odd);
+ </script>

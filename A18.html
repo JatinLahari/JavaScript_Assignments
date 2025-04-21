@@ -1,0 +1,14 @@
+
+<!-- 1	2	2	4	8	32	…… n terms -->
+ <script>  // this is fibonacci series dude
+    let n = prompt("Enter no of terms: ");
+    n = parseInt(n);
+    let sum = 1; let sum2 = 2;
+    document.write("Series: ")
+    for(let i = 1; i<=n; i++){
+        let temp = sum * sum2;
+        document.write(sum+" ");
+        sum = sum2;
+        sum2 = temp;
+    }
+ </script>

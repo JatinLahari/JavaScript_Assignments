@@ -1,0 +1,23 @@
+
+<!-- 39)WAP to check whether entered number is strong or not  -->
+ <script>
+    let n = prompt("Enter a no: ");
+    n = parseInt(n);
+    let temp = n;
+    let sum = 0;
+    while(temp != 0){
+        let rem = temp % 10;
+        let fact = 1;
+        for(let i = 1; i<=rem; i++){
+            fact *= i;
+        }
+        sum += fact;
+        temp = parseInt(temp / 10);
+    }
+    if(sum == n){
+        document.write("Entered no is a Strong no.");
+    }
+    else{
+        document.write("Entered no is not a Strong no.");
+    }
+ </script>

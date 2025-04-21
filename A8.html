@@ -1,0 +1,15 @@
+
+<!-- 8)WAP to print Fibonacci series. -->
+ <script>
+    let n = prompt("Enter a no: ");
+    n = parseInt(n);
+    let firstFibo = 0;
+    let secondFibo = 1;
+    document.write("Fibonacci Series: ")
+    for(let i = 1; i <= n; i++){
+        let temp = firstFibo + secondFibo;
+        document.write(firstFibo+", ")
+        firstFibo = secondFibo;
+        secondFibo = temp;
+    }
+ </script>

@@ -1,0 +1,19 @@
+
+<!-- 37)WAP to check whether entered number is palindrome or not  -->
+ <script> // ex:- 121, 131, 
+    let n = prompt("Enter a number: ");
+    n = parseInt(n);
+    let temp = n;
+    let pal = 0;
+    while(n != 0){
+        let rem = n % 10;
+        pal = (pal * 10) + rem;
+        n = parseInt(n / 10);
+    }
+    if(temp == pal){
+        document.write("Entered no is palindrom.");
+    }
+    else{
+        document.write("Entered no is not palindrom.");
+    }
+ </script>
