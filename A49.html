@@ -1,0 +1,23 @@
+
+<!-- 49) WAP to find out all the perfect numbers between two entered numbers  -->
+ <script>
+    let n = prompt("Enter a no: ");
+    n = parseInt(n);
+    let n2 = prompt("Enter second no: ");
+    n2 = parseInt(n2);
+
+    for(let i = n; i<=n2; i++){
+        let sum = 0;
+        for(let j = 1; j<=i/2; j++){
+            if(i % j == 0){
+                sum = sum + j;
+            }
+        }
+        if(i == sum){
+            document.write(i+" is a Perfect number.<br>");
+        }
+        else{
+            document.write(i+" is not a Perfect number.<br>");
+        }
+    }
+ </script>

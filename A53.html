@@ -1,0 +1,28 @@
+
+<!-- 53) WAP to print all the strong numbers between two entered numbers  -->
+ <script>
+    let n = prompt("Enter first no: ");
+    n = parseInt(n);
+    let n2 = prompt("Enter second no: ");
+    n2 = parseInt(n2);
+
+    for(let i =n; i<=n2; i++){
+        let temp = i;
+        let sum = 0;
+    while(temp != 0){
+        let rem = temp % 10;
+        let fact = 1;
+        for(let i = 1; i<=rem; i++){
+            fact *= i;
+        }
+        sum += fact;
+        temp = parseInt(temp / 10);
+    }
+    if(sum == i){
+        document.write(i+" is a Strong no.<br>");
+    }
+    else{
+        document.write(i+" is not a Strong no.<br>");
+    }
+    }
+ </script>

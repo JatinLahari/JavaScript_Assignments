@@ -1,0 +1,30 @@
+
+<!-- 43) WAP to convert binary number into decimal number  -->
+ <!-- 
+    binary = 111001; starts from back side
+    1*2**0
+    0*2**1
+    0*2**2
+    1*2**3
+    1*2**4
+    1*2**5
+    total = 57
+    This is how it will convert Binary into decimal. 
+ -->
+ <script> // formula says that just multiply every digit of binary by 2**0
+    let n = prompt("Enter a binary no: ");
+    n = parseInt(n);
+    let sum = 0;
+    let i = 0;
+    while(n != 0){
+        let rem = n % 10;
+        sum += rem * (2**i);
+        i++;
+        n = parseInt(n/10);
+    }
+    document.write(sum);
+
+    // let binary = prompt("Enter a binary number:");
+    // let decimal = parseInt(binary, 2); // base 2 for binary
+    // document.write("Decimal equivalent: " + decimal);
+ </script>

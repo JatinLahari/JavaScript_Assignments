@@ -1,0 +1,17 @@
+
+<!-- 48) WAP to find out the factors of all the numbers between two entered numbers  -->
+ <script>
+    let n = prompt("Enter a no: ");
+    n = parseInt(n);
+    let n2 = prompt("Enter second no: ");
+    n2 = parseInt(n2);
+    for(let i = n; i<=n2; i++){
+        document.write("Factors of "+i+" = ")
+        for(let j = 1; j<=i; j++){
+            if(i % j == 0){
+                document.write(j+",");   
+            }
+        }
+        document.write("<br>")
+    }
+ </script>

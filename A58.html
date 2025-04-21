@@ -1,0 +1,26 @@
+
+<!-- 58) WAP to convert decimal number into binary number without using array  -->
+ <!-- 
+    decimal = 174; binary comes from end to start means right to left
+    just divide the no by 2 and the reminder will be your binary no
+    again divide by 2 the reminder will get added will be your binary.
+    174/2 = 0
+    87/2 = 1
+    43/2 = 1
+    21/2 = 1
+    10/2 = 0
+    5/2 = 1
+    2/2 = 0
+    1/2 = 1
+    10101110 this is binary from down to bottom or RtoL;
+ -->
+ <script>
+    let n = prompt('Enter decimal no: ');
+    n = parseInt(n);
+    document.write("Read it from right to left: ")
+    while(n!=0){
+        let rem = n % 2;
+        document.write(rem+"");
+        n = parseInt(n/2);
+    }
+ </script>

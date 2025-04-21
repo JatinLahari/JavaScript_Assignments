@@ -1,0 +1,15 @@
+
+<!-- 47) WAP to print tables of all the numbers between two entered numbers  -->
+ <script>
+    let n = prompt("Enter first no: ");
+    n = parseInt(n);
+    let n2 = prompt("Enter second no: ");
+    n2 = parseInt(n2);
+
+    for(let i = n; i<=n2; i++){
+        for(let j = 1; j<=10; j++){
+            document.write(i+ " * "+j+" = "+(i*j)+"<br>");
+        }
+        document.write("<hr>");
+    }
+ </script>

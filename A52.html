@@ -1,0 +1,34 @@
+
+<!-- 52) WAP to find out all the Armstrong numbers between two entered numbers  -->
+ <script>
+    let n = prompt("Enter first no: ");
+    n = parseInt(n);
+    let n2 = prompt("Enter second no: ");
+    n2 = parseInt(n2);
+
+    for(let i = n; i<=n2; i++){
+        let temp = i;
+        let temp2 = i;
+        let sum = 0;
+        let count = 0;
+        while(temp != 0){
+            count++;
+            temp = parseInt(temp / 10);
+        }
+        while(temp2 != 0){
+            let digit = temp2 % 10;
+            let power = 1;
+            for(let i = 1; i<=count; i++){
+                power = power * digit;
+            }
+            sum += power;
+            temp2 = parseInt(temp2 / 10);
+        }
+        if(sum == i){
+            document.write(i+" is Armstrong number.<br>");
+        }
+        else{
+            document.write(i+" is not a armstrong number.<br>");
+        }
+    }
+ </script>
