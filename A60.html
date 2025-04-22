@@ -1,0 +1,18 @@
+
+<!-- 60) WAP to print Square, Cube and Square Root of all numbers from 1 to N  -->
+ <script>
+    let n = prompt("Enter a no: ");
+    n = parseInt(n);
+    
+    for(let i = 1; i<=n;i++){
+        document.write("Square of "+i+" : "+(i**2)+"<br>");
+    }
+    document.write("<hr>");
+    for(let i = 1; i<=n;i++){
+        document.write("Cube of "+i+" : "+(i**3)+"<br>");
+    }
+    document.write("<hr>");
+    for(let i =1; i<=n; i++){
+        document.write("Square root of "+i+" : "+(Math.sqrt(i).toFixed(2))+"<br>");
+    }
+ </script>
