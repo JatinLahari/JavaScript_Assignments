@@ -1,0 +1,23 @@
+<!--
+    1
+   11
+  1*1
+ 1**1
+11111
+-->
+<pre style="font-size: 40px;">
+<span>Pattern 47</span> <br>
+<script>
+    for(let i=5; i>=1; i--){
+        for(let j=1; j<i;j++){
+            document.write(" ");
+        }
+        for(let k=5; k>=i; k--){
+            if(k==i || i==1 || k==5)
+            document.write("1");
+            else document.write("*");
+        }
+        document.write("<br>");
+    }
+</script>
+</pre>

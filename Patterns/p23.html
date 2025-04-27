@@ -1,0 +1,28 @@
+<!--
+a
+bc
+d f
+g  j
+klmno
+ -->
+<pre style="font-size: 50px;">
+<label for="">Pattern 23</label> <br>
+<script>
+    let alp = 97;
+    for(let i=1; i<=5; i++){
+        for(let j=1;j<=i; j++){
+            if(i==j || j==1){
+                document.write(String.fromCharCode(alp));
+                alp++;
+            }else if(i==5){
+                document.write(String.fromCharCode(alp));
+                alp++;
+            }else{
+                document.write(" ");
+                alp++;
+            }
+        }
+        document.write("<br>");
+    }
+</script>
+</pre>

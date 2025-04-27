@@ -1,0 +1,26 @@
+<!--
+123456
+54321
+1234
+321
+12
+1
+-->
+<pre style="font-size: 40px;">
+<span>Pattern 39</span> <br>
+<script>
+    for(let i=6; i>=1; i--){
+        for(let j=1; j<=i; j++){
+            if(i % 2 == 0){
+                document.write(j);
+            }else{
+                for(let k=i; k>=1; k--){
+                    document.write(k);
+                }
+                break;
+            }
+        }
+        document.write("<br>"); 
+    }
+</script>
+</pre>

@@ -1,0 +1,23 @@
+<!--
+    A
+   AB
+  ABC
+ ABCD
+ABCDE
+-->
+<pre style="font-size: 40px;">
+<span>Pattern 46</span> <br>
+<script>
+    for(let i=5; i>=1; i--){
+        let n = 65;
+        for(let j=1; j<i;j++){
+            document.write(" ");
+        }
+        for(let k=5; k>=i; k--){
+            document.write(String.fromCharCode(n));
+            n++;
+        }
+        document.write("<br>");
+    }
+</script>
+</pre>

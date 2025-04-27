@@ -1,0 +1,20 @@
+<!-- 
+ABCDE
+A  D
+A C
+AB
+A
+-->
+<pre style="font-size: 40px;">
+<span>Pattern 36</span> <br>
+<script>
+    for(let i=69; i>=65;i--){
+        for(let j=65; j<=i;j++){
+            if(i==j || i==69 || j==65)
+            document.write(String.fromCharCode(j));
+            else document.write(" ");
+        }
+        document.write("<br>");
+    }
+</script>
+</pre>
