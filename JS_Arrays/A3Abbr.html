@@ -1,0 +1,19 @@
+<!-- 3. The given input is a string of multiple words with a single space between each of them. Abbreviate the name and return the name initials.
+
+ const input = "George Raymond Richard Martin";
+ output :- "GRRM"; -->
+<pre style="font-size: 50px;">
+<label for="">Abbreviation 1</label> <br>
+<script>
+     let n = prompt("Enter a no: ");
+     const input = [];
+     for(let i =0; i<n; i++){
+        let inp = prompt("Enter "+(i+1)+" String : ");
+        input.push(inp);
+     }
+     document.write("Abbreviation: ")
+     for(let str of input){
+        document.write(str[0]);
+     }
+</script>
+</pre>

@@ -1,0 +1,44 @@
+<pre style="font-size: 40px;">
+<label for="">Min, Max and Age Difference</label> <br>
+<script>
+const input = [
+  {
+    name: "John",
+    age: 13,
+  },
+  {
+    name: "Mark",
+    age: 56,
+  },
+  {
+    name: "Rachel",
+    age: 45,
+  },
+  {
+    name: "Nate",
+    age: 67,
+  },
+  {
+    name: "Jennifer",
+    age: 65,
+  }
+];
+let diff = [];
+    let min = input[0].age;
+    let max = input[0].age;
+    for(let mn of input){
+        if(mn.age < min){
+            min = mn.age;
+        }
+    }
+    diff.push(min);
+    for(let mx of input){
+        if(mx.age > max){
+            max = mx.age;
+        }
+    }
+    diff.push(max);
+    diff.push(max - min);
+    document.write(diff);
+</script>
+</pre>

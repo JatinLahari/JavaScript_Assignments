@@ -1,0 +1,20 @@
+<!--1. Square the value of every element in the array. Presume that you will only get numbers in the input array.
+ const input = [1, 2, 3, 4, 5];
+ output: - [1, 4, 9, 16, 25];
+-->
+<pre style="font-size: 50px">
+<label for="">Square of Array elements</label> <br>
+<script>
+    let n = prompt("Enter a no: ");
+    let result = [];
+    let result2 = [];
+    for(let i =0; i<n; i++){
+        let m = prompt("Enter no: ");
+        result.push(m);
+    }
+        result2 = result.map((ele) =>{
+            return ele*ele;
+        });
+        document.write(result2);
+</script>
+</pre>
