@@ -1,0 +1,25 @@
+<!--
+ABCDE 
+ A__D 
+  A_C 
+   AB 
+    A 
+-->
+<pre style="font-size: 40px;">
+<span>Pattern 54</span> <br>
+<script>
+    for(let i=69; i>=65; i--){
+        for(let j=69; j>=i; j--){
+            document.write(" ");
+        }
+        for(let k=65; k<=i; k++){
+            if(i==k || i==69 || k==65){
+                document.write(String.fromCharCode(k));
+            }else{
+                document.write("_");
+            }
+        }
+        document.write("<br>");
+    }
+</script>
+</pre>

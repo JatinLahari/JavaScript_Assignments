@@ -1,0 +1,20 @@
+<!--
+A B C D E 
+ A B C D 
+  A B C 
+   A B 
+    A -->
+<pre style="font-size: 40px;">
+<span>Pattern 72</span> <br>
+<script>
+    for(let i=69; i>=65; i--){
+        for(let j=69; j>i; j--){
+            document.write(" ");
+        }
+        for(let k=65; k<=i; k++){
+            document.write(String.fromCharCode(k)+" ");
+        }
+        document.write("<br>");
+    }
+</script>
+</pre>

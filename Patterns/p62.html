@@ -1,0 +1,22 @@
+<!--
+    1 
+   123 
+  12345 
+ 1234567 
+123456789 -->
+<pre style="font-size: 40px;">
+<span>Pattern 62</span> <br>
+<script>
+    for(let i=0; i<5; i++){
+        let n = 1;
+        for(let j=5; j>i; j--){
+            document.write(" ");
+        }
+        for(let k=0; k<=i*2; k++){
+            document.write(n);
+            n++;
+        }
+        document.write("<br>"); 
+    }
+</script>
+</pre>

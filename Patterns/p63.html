@@ -1,0 +1,22 @@
+<!--
+    A 
+   ABC 
+  ABCDE 
+ ABCDEEF 
+ABCDEFGHI -->
+<pre style="font-size: 40px;">
+<span>Pattern 63</span> <br>
+<script>
+    for(let i=0; i<5; i++){
+        let alpha = 65;
+        for(let j=5; j>i; j--){
+            document.write(" ");
+        }
+        for(let k=0; k<=i*2; k++){
+            document.write(String.fromCharCode(alpha));
+            alpha++;
+        }
+        document.write("<br>");
+    }
+</script>
+</pre>

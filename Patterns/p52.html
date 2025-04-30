@@ -1,0 +1,23 @@
+<!--
+12345
+ 1__4
+  1_3
+   12
+    1
+-->
+<pre style="font-size: 40px;">
+<span>Pattern 52</span> <br>
+<script>
+    for(let i=5; i>=1; i--){
+        for(let j=i; j<5;j++){
+            document.write(" ");
+        }
+        for(let k=1; k<=i; k++){
+            if(i==5 || k==1 || i==k)
+            document.write(k);
+            else document.write("_");
+        }
+        document.write("<br>");
+    }
+</script>
+</pre>
